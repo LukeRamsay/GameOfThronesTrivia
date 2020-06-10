@@ -1,0 +1,2 @@
+rootProject.name='GameOfThronesTrivia'
+include ':app'
