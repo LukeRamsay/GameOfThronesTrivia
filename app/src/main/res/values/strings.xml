@@ -4,7 +4,7 @@
     <string name="welcome_message">Welcome to Westeros!</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="game_fragment">Home Screen</string>
+    <string name="game_fragment">Select a Noble House to Get Started</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="game_question">First Question?</string>
