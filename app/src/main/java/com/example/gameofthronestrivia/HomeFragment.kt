@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gameofthronestrivia.databinding.FragmentHomeBinding
 
 /**
@@ -25,7 +26,21 @@ class HomeFragment : Fragment() {
         binding.catButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_gameFragment)
         )
+        val categoryList = generateDummyList(10)
+        binding.categoryList.adapter = CategoryAdapter(categoryList)
+        binding.categoryList.layoutManager = LinearLayoutManager(context)
+        binding.categoryList.setHasFixedSize(true)
         return binding.root
+    }
+
+    private fun generateDummyList(size: Int): List<CategoryItem> {
+
+        val list = ArrayList<CategoryItem>()
+        for (i in 0 until size){
+            val item = CategoryItem("Category $i")
+            list += itemf
+        }
+        return list
     }
 
 }
