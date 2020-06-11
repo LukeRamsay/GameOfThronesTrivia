@@ -9,6 +9,7 @@ import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
@@ -21,13 +22,15 @@ import com.example.gameofthronestrivia.databinding.FragmentGameBinding
  */
 class GameFragment : Fragment() {
 
+    private val viewModel: GameViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_game, container, false)
-        val viewModel: GameViewModel by viewModels()
+//        val viewModel: GameViewModel by viewModels()
         val binding: FragmentGameBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_game, container, false)
 
         viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
