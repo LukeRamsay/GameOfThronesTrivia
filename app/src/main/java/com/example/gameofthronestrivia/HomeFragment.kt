@@ -41,7 +41,7 @@ class HomeFragment : Fragment(), OnCategoryItemClickListener {
 
 
     override fun onCategoryClick(category: CategoryItem, position: Int, view: View) {
-        Toast.makeText(context, "The current category text: ${category.text} the category id: ${category.id}", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, "The current category text: ${category.text} the category id: ${category.id}", Toast.LENGTH_SHORT).show()
         viewModel.setUpGame(category.id)
         view.findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
     }
