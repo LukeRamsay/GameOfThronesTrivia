@@ -28,9 +28,9 @@ class HomeFragment : Fragment(), OnCategoryItemClickListener {
         // Inflate the layout for this fragment
         // return inflater.inflate(R.layout.fragment_home, container, false)
         val binding: FragmentHomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
-        binding.catButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_gameFragment)
-        )
+//        binding.catButton.setOnClickListener(
+//            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_gameFragment)
+//        )
 //        val categoryList = viewModel.generateDummyList(6)
         binding.categoryList.adapter = CategoryAdapter(viewModel.categories, this)
         binding.categoryList.layoutManager = LinearLayoutManager(context)
