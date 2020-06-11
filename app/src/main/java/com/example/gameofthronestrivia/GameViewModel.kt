@@ -50,24 +50,24 @@ class GameViewModel : ViewModel() {
     }
 
     private val questions = listOf(
-        Question("Our First Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Second Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Third Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Fourth Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Fifth Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Sixth Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Seventh Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Eighth Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Ninth Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our Tenth Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 11 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 12 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 13 Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 14 Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 15 Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 16 Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 17 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
-        Question("Our 18 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ")
+        Question("Our First Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Second Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Third Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Fourth Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Fifth Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Sixth Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Seventh Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Eighth Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Ninth Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our Tenth Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 11 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 12 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 13 Question",1, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 14 Question",2, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 15 Question",3, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 16 Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 17 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg"),
+        Question("Our 18 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ", "as_high_as_honor_by_noble__6_d89uhxq.jpg")
     )
 //    fun generateDummyList(size: Int): List<CategoryItem> {
 //
