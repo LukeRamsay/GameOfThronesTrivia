@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
         val list = ArrayList<CategoryItem>()
         for (i in 0 until size){
             val item = CategoryItem("Category $i")
-            list += itemf
+            list += item
         }
         return list
     }

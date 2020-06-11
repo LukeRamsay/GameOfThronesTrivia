@@ -24,6 +24,10 @@ android {
         }
     }
 
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
     dataBinding {
         enabled = true
     }
@@ -43,5 +47,6 @@ dependencies {
     //Navigation Stuff
     implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
     implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
-
+    //Fragment
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
 }
