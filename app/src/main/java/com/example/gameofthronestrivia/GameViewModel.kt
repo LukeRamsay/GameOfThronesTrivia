@@ -26,6 +26,8 @@ class GameViewModel : ViewModel() {
         _question.value = newQuestions[0]
         _currentQuestion.value = 0
         _score.value = 0
+        // Setting amount of questions to the count of how many questions are in the category
+        _amountOfQuestions.value = questions.filter { q -> q.categoryId == categoryId }.count()
 
     }
 
@@ -66,7 +68,6 @@ class GameViewModel : ViewModel() {
         Question("Our 16 Question",4, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
         Question("Our 17 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
         Question("Our 18 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ")
-
     )
 
 }

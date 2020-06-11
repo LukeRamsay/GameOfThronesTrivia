@@ -34,7 +34,10 @@ class GameFragment : Fragment() {
         val binding: FragmentGameBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_game, container, false)
 
         viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
-            binding.score.text = "Score $newScore"
+            //Displaying score over how many questions there are
+            binding.score.text = "Score $newScore / ${viewModel.amountOfQuestions.value} "
+            //Displaying how many questions they are and what question they are on currently
+            
         })
 
         viewModel.question.observe(viewLifecycleOwner, Observer { newQuestion ->
@@ -49,6 +52,8 @@ class GameFragment : Fragment() {
         })
 
         binding.submitButton.setOnClickListener {view : View ->
+            //Displaying how many questions they are and what question they are on currently
+            binding.progress.text = "${viewModel.currentQuestion.value!!.plus(1)} / ${viewModel.amountOfQuestions.value} "
             val id = binding.radioGroup.checkedRadioButtonId
             viewModel.checkQuestion(id)
             Toast.makeText(context, "This is the current ID: ${viewModel.currentQuestion.value}", Toast.LENGTH_SHORT).show()
