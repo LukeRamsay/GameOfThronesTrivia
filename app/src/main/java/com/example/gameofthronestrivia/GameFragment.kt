@@ -37,7 +37,7 @@ class GameFragment : Fragment() {
             //Displaying score over how many questions there are
             binding.score.text = "Score $newScore / ${viewModel.amountOfQuestions.value} "
             //Displaying how many questions they are and what question they are on currently
-            
+
         })
 
         viewModel.question.observe(viewLifecycleOwner, Observer { newQuestion ->

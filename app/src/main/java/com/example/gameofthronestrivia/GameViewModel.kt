@@ -69,5 +69,24 @@ class GameViewModel : ViewModel() {
         Question("Our 17 Question",5, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 "),
         Question("Our 18 Question",6, listOf("answer 1 ", "answer 2", "answer 3", "answer 4"), "answer 1 ")
     )
+//    fun generateDummyList(size: Int): List<CategoryItem> {
+//
+//        val list = ArrayList<CategoryItem>()
+//        for (i in 0 until size){
+//            val item = CategoryItem(i,  "Category $i")
+//            list += item
+//        }
+//        return list
+//    }
+
+    val categories = listOf(
+        CategoryItem(1, "1History"),
+        CategoryItem(2, "2History"),
+        CategoryItem(3, "3History"),
+        CategoryItem(4, "4History"),
+        CategoryItem(5, "5History"),
+        CategoryItem(6, "6History")
+
+    )
 
 }
